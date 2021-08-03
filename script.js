@@ -1,22 +1,44 @@
-ajaxHomePageCall();
-
-function ajaxHomePageCall() {
+ajaxDashboardPageCall();
+function ajaxDashboardPageCall() {
   $.ajax({
-    url: './pages/home.html',
+    url: './pages/dashboard.php',
     success: function (response) {
+      $('.Profile,.Registered-Events,.Leaderboard').removeClass('active');
+      $('.Dashboard').addClass('active');
+      $('.ajax-main-content').html(response);
+    },
+  });
+}
+function ajaxProfilePageCall() {
+  $.ajax({
+    url: './pages/profile.php',
+    success: function (response) {
+      $('.Dashboard,.Profile.Registered-Events,.Leaderboard').removeClass('active');
+      $('.Profile').addClass('active');
       $('.ajax-main-content').html(response);
     },
   });
 }
 
-function ajaxHome2PageCall() {
+function ajaxRegisteredEventsPageCall() {
   $.ajax({
-    url: './pages/home2.html',
+    url: './pages/registeredEvents.php',
     success: function (response) {
-      $('.home2').addClass('active');
-      $('.home').removeClass('active');
-
+      $('.Profile,.Dashboard,.Leaderboard').removeClass('active');
+      $('.Registered-Events').addClass('active');
       $('.ajax-main-content').html(response);
     },
   });
 }
+
+function ajaxLeaderboardPageCall() {
+  $.ajax({
+    url: './pages/leaderboard.php',
+    success: function (response) {
+      $('.Dashboard,.Profile,.Registered-Events').removeClass('active');
+      $('.Leaderboard').addClass('active');
+      $('.ajax-main-content').html(response);
+    },
+  });
+}
+

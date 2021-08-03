@@ -29,16 +29,19 @@
 			</div>
 			<ul class="list-unstyled components">
 				<p>LMS portal</p>
-				<li class="active home">
+				<li class="Dashboard"> <a href="#" onclick="ajaxDashboardPageCall()"><i class="fas fa-tachometer-alt"></i>&nbsp; Dashboard</a></li>
+				<li class="Profile"> <a href="#" onclick="ajaxProfilePageCall()"><i class="fas fa-user-alt">&nbsp;</i> Profile</a> </li>
+				<li class="Registered-Events"> <a href="#" onclick="ajaxRegisteredEventsPageCall()"><i class="fas fa-list-ol"></i>&nbsp; Registered Events</a> </li>
+				<li class="Leaderboard"> <a href="#" onclick="ajaxLeaderboardPageCall()"><i class="fas fa-chart-bar"></i>&nbsp; Leaderboard</a> </li>
+				<!-- <li class="active home">
 					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> <i class="fas fa-home"></i> &nbsp;Home</a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
 						<li> <a href="#" >Home page</a> </li>
 						<li> <a href="#">About SAC</a> </li>
 						<li> <a href="#">contact</a> </li>
 					</ul>
-				</li>
-				<li class="home2"> <a href="#" onclick="ajaxHome2PageCall()"><i class="fas fa-tachometer-alt"></i>&nbsp; Dashboard</a> </li>
-				<li> <a href="#"><i class="fas fa-address-card"></i>&nbsp; About</a> </li>
+				</li> -->
+				<!-- <li> <a href="#"><i class="fas fa-address-card"></i>&nbsp; About</a> </li>
 				<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
@@ -51,15 +54,11 @@
                             <a href="#">Page 3</a>
                         </li>
                     </ul>
-				</li>
-				<li> <a href="#"><i class="fas fa-user-alt"></i>&nbsp; profile</a> </li>
-				<li> <a href="#"><i class="fas fa-phone-volume"></i>&nbsp; Contact</a> </li>
-				<li> <a href="#"><i class="fas fa-list-ol"></i>&nbsp; Registered Events</a> </li>
-				<li> <a href="#"><i class="fas fa-chart-bar"></i>&nbsp; Leaderboard</a> </li>
+				</li> -->
 			</ul>
 			<ul class="list-unstyled CTAs">
-				<li> <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Add Mentor</a> </li>
-				<li> <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Logout</a> </li>
+				<li> <a href="#" class="download">Add Mentor</a> </li>
+				<li> <a href="#" class="article">Logout</a> </li>
 			</ul>
 		</nav>
 		<!-- Page Content Holder -->
