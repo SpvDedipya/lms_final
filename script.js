@@ -9,11 +9,12 @@ function ajaxDashboardPageCall() {
     },
   });
 }
+
 function ajaxProfilePageCall() {
   $.ajax({
     url: './pages/profile.php',
     success: function (response) {
-      $('.Dashboard,.Profile.Registered-Events,.Leaderboard').removeClass('active');
+      $('.Dashboard,.Registered-Events,.Leaderboard').removeClass('active');
       $('.Profile').addClass('active');
       $('.ajax-main-content').html(response);
     },
@@ -42,3 +43,20 @@ function ajaxLeaderboardPageCall() {
   });
 }
 
+// ==========================================
+/* function profileUpdate() {
+   var formData ={
+     email: $('#email').val(),
+     password: $('#password').val(),
+     ProfileUpdate:"ProfileUpdate",
+   };
+   $.ajax({
+     type:"POST",
+     url: './backScript.php',
+     data:formData,
+     success: function (response) {
+       alert(response);
+     },
+   });
+ }*/
+ 

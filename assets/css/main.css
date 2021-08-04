@@ -218,3 +218,25 @@ a.article:hover {
     transform: rotate(-45deg) translate(1px, -1px);
   }
 }
+
+.bg-sac-primary{
+  background-color: #2d0653 !important;
+  color: white;
+}
+.text-sac-primary{
+  color: #2d0653 !important;
+}
+.border-sac-primary{
+  border: 2px solid #2d0653;
+}
+
+.bg-sac-secondry{
+  background-color: violet !important;
+  color: white;
+}
+.text-sac-secondry{
+  color: violet !important;
+}
+.border-sac-secondry{
+  border: 2px solid violet;
+}
